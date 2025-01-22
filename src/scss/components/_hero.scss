@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+  .bg-hero {
+    background-image: url('../assets/img/techivation-cuUWIKaEusk-unsplash.jpg');
+    height: 48.8rem;
+    max-width: 112rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .title {
+    color: $naranja;
+    font-size: 12rem;
+    font-family: 'Futura';
+    font-weight: normal;
+  }
+}
+
+.hero-description {
+  max-width: 62rem;
+  margin: 6rem auto;
+
+  .text {
+    line-height: 1.6;
+    font-family: 'Futura';
+  }
+
+  .text.main {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .text.sub {
+    font-weight: lighter;
+  }
+
+  span {
+    color: $azul;
+  }
+}

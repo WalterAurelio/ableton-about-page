@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as *;
+
+.navbar {
+  // background-color: yellow;
+  margin: 2rem 4rem;
+  display: flex;
+
+  .anchor_logo {
+    display: flex;
+  }
+
+  .imagen_logo {
+    max-height: 2.4rem;
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+    font-family: 'Futura';
+
+    &.uno .more_button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    li {
+      margin-left: 2rem;
+    }
+
+    &.dos {
+      margin-left: auto;
+    }
+  }
+}
+
+.list.dos {
+  li:nth-child(1) a {
+    color: $azul;
+  }
+}
+
