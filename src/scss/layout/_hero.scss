@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+  padding: 0 12rem;
+
+  .text_container {
+    background-image: url('../assets/img/techivation-cuUWIKaEusk-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 48.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    color: $naranja;
+    font-family: 'Futura';
+    font-weight: normal;
+    font-size: 14rem;
+  }
+}

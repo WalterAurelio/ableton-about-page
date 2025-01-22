@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+
+.paragraph {
+  width: 100%;
+
+  .title, .description {
+    line-height: 1.6;
+    font-family: 'Futura';
+  }
+
+  .title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+  }
+
+  .description {
+    font-weight: lighter;
+  }
+
+  span {
+    color: $azul;
+  }
+}

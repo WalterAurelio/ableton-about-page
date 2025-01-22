@@ -1,16 +1,35 @@
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import DescriptionSection_2 from './components/descriptionSection_2';
-// import ImgLayout_1 from './components/ImgLayout_1';
+import Hero from './layout/Hero';
+import Paragraph from './components/Paragraph';
+import ImageCollage from './components/ImageCollage';
 
 function App() {
   return (
-    <body>
+    <div>
       <Navbar />
       <Hero />
+      <div className='paragraph_container'>
+        <Paragraph paragraphId={1} />
+      </div>
+      <ImageCollage positionBg={'right'} />
+
+      <div className='paragraph_container'>
+        <Paragraph paragraphId={2} />
+      </div>
+      <div className='paragraph_container'>
+        <Paragraph paragraphId={3} />
+      </div>
+      <div className='paragraph_container'>
+        <Paragraph paragraphId={4} />
+      </div>
+      <div className='paragraph_container'>
+        <Paragraph paragraphId={5} />
+      </div>
+      <div className='paragraph_container'>
+        <Paragraph paragraphId={6} />
+      </div>
       {/* <ImgLayout_1 /> */}
-      <DescriptionSection_2 />
-    </body>
+    </div>
   );
 }
 export default App;
