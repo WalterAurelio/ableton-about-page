@@ -3,6 +3,9 @@ import Hero from './layout/Hero';
 import Paragraph from './components/Paragraph';
 import ImageCollage from './components/ImageCollage';
 import picsForCollage from './assets/picsForCollage';
+import LatestJobs from './layout/LatestJobs';
+import BottomCategory from './components/BottomCategory';
+import Footer from './layout/Footer';
 
 function App() {
   return (
@@ -35,7 +38,11 @@ function App() {
       <div className='paragraph_container'>
         <Paragraph paragraphId={6} />
       </div>
-      {/* <ImgLayout_1 /> */}
+
+      <LatestJobs />
+
+      <Footer />
+
     </div>
   );
 }

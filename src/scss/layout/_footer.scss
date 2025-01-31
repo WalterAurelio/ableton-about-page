@@ -1,0 +1,69 @@
+@use '../abstracts/variables' as *;
+
+.footer_container {
+  padding: 0 12rem;
+
+  h3 {
+    font-family: 'Futura';
+    font-weight: normal;
+    font-size: 4.8rem;
+  }
+
+  .categories_container {
+    display: grid;
+    grid-template-columns: auto auto 36%;
+    row-gap: 4rem;
+  }
+}
+
+.newsletter_container {
+  font-family: 'Futura';
+  font-weight: normal;
+  line-height: 1.6;
+
+  .description {
+    font-weight: lighter;
+    margin-bottom: 2rem;
+  }
+
+  .email_input {
+    width: 76%;
+    height: 3.6rem;
+    border: none;
+    padding-left: 1.2rem;
+  }
+
+  .signup_button {
+    width: 24%;
+    height: 3.6rem;
+    border: none;
+    background-color: $azul;
+    color: $blanco;
+  }
+}
+
+.legals_container {
+  font-family: 'Futura';
+  font-size: 1.4rem;
+  display: flex;
+  margin-top: 5.2rem;
+
+  .legal {
+    margin-right: 1.2rem;
+
+    &:nth-child(7) {
+      margin-right: unset;
+    }
+  }
+}
+
+.madein_container {
+  margin-left: auto;
+  display: flex;
+  .ableton_logo {
+    max-width: 4rem;
+    height: fit-content;
+    margin-left: 1.2rem;
+  }
+
+}

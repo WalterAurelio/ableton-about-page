@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+
+.latest_jobs {
+  padding: 0 12rem;
+  min-height: 48.8rem;
+  display: flex;
+
+  .meeting_img {
+    max-width: 50%;
+    object-fit: cover;
+  }
+
+  .jobs_text_container {
+    background-color: $celeste;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 12rem;
+
+    p, a {
+      font-family: 'Futura';
+      font-size: 2.4rem;
+      line-height: 1.6;
+    }
+
+    a {
+      margin-top: 2rem;
+      color: $azul;
+    }
+  }
+}

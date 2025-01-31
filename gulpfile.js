@@ -1,5 +1,5 @@
 import pkg from 'gulp';
-const { src, dest } = pkg;
+const { src, dest, series } = pkg;
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
 
