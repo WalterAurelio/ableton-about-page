@@ -1,3 +1,5 @@
+@use '../scss/abstracts/variables' as *;
+
 // Base
 @use 'base';
 
@@ -7,7 +9,37 @@
 // Layout
 @use 'layout';
 
+.tabs_container {
+  font-family: 'Futura';
+  margin: 2rem 4rem;
+
+  a:nth-child(1) {
+    color: $naranja;
+    margin-right: 2rem;
+  }
+}
+
 .paragraph_container {
   max-width: 68rem;
   margin: 0 auto;
+  margin-bottom: $sectionSpacing;
+}
+
+.makers_container {
+  padding: 0 12rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $sectionSpacing;
+
+  .makers_img {
+    height: 58.3rem;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  p {
+    font-family: 'Futura';
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+  }
 }

@@ -42,7 +42,7 @@ function Navbar() {
         <li>
           <p
             onClick={() => setIsOpen(!isOpen)}
-            className='more_button'
+            className={`more_button ${ isOpen ? 'naranja' : '' }`}
           >
             More {isOpen ? <BiMinus /> : <BiPlus />}
           </p>
