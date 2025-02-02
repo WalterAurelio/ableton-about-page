@@ -8,7 +8,7 @@ function VideoCustom() {
     <div className='video_container'>
       {
         !isClicked ? (
-          <div className="thumbnail">
+          <div onClick={() => { setIsClicked(true) }} className="thumbnail">
             <button onClick={() => { setIsClicked(true) }} className="play_button" type="button">
               <IoMdPlay />
             </button>
